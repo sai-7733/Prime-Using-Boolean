@@ -1,0 +1,27 @@
+import java.util.*;
+class A{
+static boolean isPrime(int n){
+    int c=0;
+    for(int i=1;i<=n;i++){
+        if(n%i==0){
+            c++;
+        }
+    }
+    if(c==2){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(isPrime(n)){
+            System.out.println("prime");
+        }
+        else{
+            System.out.println("not prime");
+        }
+    }
+}
